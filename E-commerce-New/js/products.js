@@ -360,7 +360,7 @@ const cardsnew = [
 ];
 
 /* =========================================================
-   CARDS NEW CONTAINER
+   CARDS NEW CONTAINER-----
 ========================================================= */
 
 const cardsnewContainer =
