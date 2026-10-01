@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>سبد خرید | دردونه</title>
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         SHOPPING CART CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="E-commerce-New/css/shopping-cart.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="cart-header">
+
+
+    <!-- Logo -->
+
+    <a
+        href="index.html"
+        class="cart-logo"
+        aria-label="بازگشت به فروشگاه"
+    >
+
+        <img
+            class="dordou"
+            src="E-commerce-New/images/dordouneh.jpg"
+            alt="دردونه"
+        >
+
+    </a>
+
+
+    <!-- Title -->
+
+    <div class="cart-title">
+
+        <div class="cart-title-icon">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+        </div>
+
+
+        <div>
+
+            <h1>
+                سبد خرید شما
+            </h1>
+
+            <span>
+                بررسی و مدیریت محصولات
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Cart -->
+
+    <div
+        class="cart-box"
+        role="button"
+        tabindex="0"
+        aria-label="سبد خرید"
+    >
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span id="cart-counter">
+            ۰
+        </span>
+
+    </div>
+
+
+</header>
+
+
+
+<!-- =====================================================
+     PROGRESS
+===================================================== -->
+
+<div class="cart-progress">
+
+
+    <div class="cart-step active">
+
+        <div class="cart-step-circle">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+        </div>
+
+        <span>
+            سبد خرید
+        </span>
+
+    </div>
+
+
+    <div class="cart-progress-line"></div>
+
+
+    <div class="cart-step">
+
+        <div class="cart-step-circle">
+
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+        <span>
+            اطلاعات سفارش
+        </span>
+
+    </div>
+
+
+    <div class="cart-progress-line"></div>
+
+
+    <div class="cart-step">
+
+        <div class="cart-step-circle">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+        </div>
+
+        <span>
+            پرداخت
+        </span>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="cart-page">
+
+
+    <!-- =================================================
+         PRODUCTS
+    ================================================== -->
+
+    <section class="cart-products">
+
+
+        <div class="products-header">
+
+            <div>
+
+                <h2>
+                    محصولات سبد خرید
+                </h2>
+
+                <p id="cart-items-info">
+                    محصولات انتخاب‌شده شما
+                </p>
+
+            </div>
+
+
+            <div class="products-header-icon">
+
+                <i class="fa-solid fa-box-open"></i>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="cart-items"
+            class="cart-items"
+        ></div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         SUMMARY
+    ================================================== -->
+
+    <aside class="cart-summary">
+
+
+        <div class="summary-header">
+
+
+            <div>
+
+                <h2>
+                    خلاصه سفارش
+                </h2>
+
+                <span>
+                    صورتحساب شما
+                </span>
+
+            </div>
+
+
+            <div class="summary-icon">
+
+                <i class="fa-solid fa-receipt"></i>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="summary-divider"></div>
+
+
+
+        <!-- Total -->
+
+        <div class="summary-row">
+
+            <span>
+                جمع کل کالاها
+            </span>
+
+            <strong id="total-price">
+                ۰ تومان
+            </strong>
+
+        </div>
+
+
+
+        <!-- Discount -->
+
+        <div class="summary-row discount-row">
+
+            <span>
+                تخفیف
+            </span>
+
+            <strong id="discount-price">
+                ۰ تومان
+            </strong>
+
+        </div>
+
+
+
+        <!-- Shipping -->
+
+        <div class="summary-row">
+
+            <span>
+                هزینه ارسال
+            </span>
+
+            <strong class="free-shipping">
+                رایگان
+            </strong>
+
+        </div>
+
+
+
+        <div class="summary-divider"></div>
+
+
+
+        <!-- Payable -->
+
+        <div class="final-price">
+
+            <span>
+                مبلغ قابل پرداخت
+            </span>
+
+            <strong id="payable-price">
+                ۰ تومان
+            </strong>
+
+        </div>
+
+
+
+        <!-- Checkout -->
+
+        <button
+            id="checkout-btn"
+            type="button"
+        >
+
+            <span>
+                ادامه فرآیند خرید
+            </span>
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </button>
+
+
+
+        <!-- Security -->
+
+        <div class="secure-payment">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <span>
+                خرید امن و مطمئن
+            </span>
+
+        </div>
+
+
+
+        <!-- Back -->
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+            بازگشت به فروشگاه
+
+        </a>
+
+
+    </aside>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="cart-footer">
+
+    <span>
+        © دردونه - تمامی حقوق محفوظ است
+    </span>
+
+    <span>
+        خرید امن • پشتیبانی • ضمانت بازگشت
+    </span>
+
+</footer>
+
+
+
+<!-- =====================================================
+     SHOPPING CART JS
+===================================================== -->
+
+<script src="E-commerce-New/js/shopping-cart.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تکمیل سفارش - دردونه</title>
+
+    <link rel="stylesheet" href="E-commerce-New/css/checkout.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="checkout-header">
+
+        <div class="header-right">
+
+            <a href="index.html" class="back-home">
+                <span>→</span>
+                بازگشت به فروشگاه
+            </a>
+
+        </div>
+
+
+        <div class="checkout-title">
+
+            <img
+                class="dordou"
+                src="E-commerce-New/images/dordouneh.jpg"
+                alt="دردونه"
+            >
+
+            <div>
+                <span>تکمیل سفارش</span>
+                <small>ثبت نهایی خرید</small>
+            </div>
+
+        </div>
+
+
+        <div class="header-left">
+
+            <div class="secure-checkout">
+                <span class="secure-icon">🔒</span>
+                <span>خرید امن</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PROGRESS ================= -->
+
+    <div class="checkout-progress">
+
+        <div class="progress-step completed">
+
+            <div class="step-circle">
+                ✓
+            </div>
+
+            <span>سبد خرید</span>
+
+        </div>
+
+
+        <div class="progress-line"></div>
+
+
+        <div class="progress-step active">
+
+            <div class="step-circle">
+                ۲
+            </div>
+
+            <span>اطلاعات سفارش</span>
+
+        </div>
+
+
+        <div class="progress-line"></div>
+
+
+        <div class="progress-step">
+
+            <div class="step-circle">
+                ۳
+            </div>
+
+            <span>پرداخت</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="checkout-container">
+
+
+        <!-- ================= RIGHT COLUMN ================= -->
+
+        <div class="checkout-main">
+
+
+            <!-- اطلاعات گیرنده -->
+
+            <section class="checkout-section">
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <h2>اطلاعات گیرنده</h2>
+
+                        <p>
+                            اطلاعات تحویل گیرنده سفارش را وارد کنید
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="fullname">
+                            نام و نام خانوادگی
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                👤
+                            </span>
+
+                            <input
+                                type="text"
+                                id="fullname"
+                                placeholder="نام و نام خانوادگی"
+                                autocomplete="name"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="mobile">
+                            شماره موبایل
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                📱
+                            </span>
+
+                            <input
+                                type="tel"
+                                id="mobile"
+                                placeholder="مثلاً 09123456789"
+                                maxlength="11"
+                                autocomplete="tel"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- آدرس -->
+
+            <section class="checkout-section">
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+                        <!-- 📍 -->
+                         📌
+                    </div>
+
+                    <div>
+
+                        <h2>آدرس تحویل</h2>
+
+                        <p>
+                            سفارش شما به این آدرس ارسال خواهد شد
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="address">
+                        آدرس کامل
+                    </label>
+
+                    <div class="textarea-wrapper">
+
+                        <textarea
+                            id="address"
+                            rows="4"
+                            placeholder="استان، شهر، خیابان، کوچه، پلاک و واحد..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="postal-code">
+                        کد پستی
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            <!-- 📮 -->
+                            📬
+                        </span>
+
+                        <input
+                            type="text"
+                            id="postal-code"
+                            placeholder="کد پستی ۱۰ رقمی"
+                            maxlength="10"
+                            inputmode="numeric"
+                        >
+
+                    </div>
+
+                    <small class="input-help">
+                        کد پستی باید ۱۰ رقم باشد.
+                    </small>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- پیام امنیت -->
+
+            <div class="security-box">
+
+                <div class="security-icon">
+                    🛡️
+                </div>
+
+                <div>
+
+                    <strong>
+                        اطلاعات شما محفوظ است
+                    </strong>
+
+                    <p>
+                        اطلاعات وارد شده فقط برای پردازش و ارسال سفارش
+                        استفاده خواهد شد.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ثبت سفارش موبایل -->
+
+            <button
+                id="submit-order-mobile"
+                class="submit-order mobile-submit"
+            >
+                ثبت و ادامه سفارش
+                <span>←</span>
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= LEFT COLUMN ================= -->
+
+        <aside class="order-sidebar">
+
+
+            <section class="checkout-section order-summary">
+
+
+                <div class="summary-header">
+
+                    <div>
+
+                        <h2>
+                            خلاصه سفارش
+                        </h2>
+
+                        <span id="checkout-count">
+                            سبد خرید
+                        </span>
+
+                    </div>
+
+                    <div class="summary-cart-icon">
+                        🛒
+                    </div>
+
+                </div>
+
+
+                <!-- محصولات -->
+
+                <div id="checkout-products">
+
+                    <!-- محصولات توسط JavaScript -->
+
+                </div>
+
+
+
+                <!-- جداکننده -->
+
+                <div class="summary-divider"></div>
+
+
+
+                <!-- جمع کالاها -->
+
+                <div class="summary-row">
+
+                    <span>
+                        جمع کالاها
+                    </span>
+
+                    <strong id="checkout-total">
+                        ۰ تومان
+                    </strong>
+
+                </div>
+
+
+
+                <!-- تخفیف -->
+
+                <div class="summary-row discount-row">
+
+                    <span>
+                        تخفیف
+                    </span>
+
+                    <strong id="checkout-discount">
+                        ۰ تومان
+                    </strong>
+
+                </div>
+
+
+
+                <!-- هزینه ارسال -->
+
+                <div class="summary-row">
+
+                    <span>
+                        هزینه ارسال
+                    </span>
+
+                    <strong class="shipping-free">
+                        رایگان
+                    </strong>
+
+                </div>
+
+
+
+                <div class="summary-divider"></div>
+
+
+
+                <!-- مبلغ نهایی -->
+
+                <div class="final-price">
+
+                    <span>
+                        مبلغ قابل پرداخت
+                    </span>
+
+                    <strong id="checkout-final">
+                        ۰ تومان
+                    </strong>
+
+                </div>
+
+
+
+                <!-- دکمه -->
+
+                <button
+                    id="submit-order"
+                    class="submit-order"
+                >
+
+                    <span>
+                        ثبت و ادامه سفارش
+                    </span>
+
+                    <span class="button-arrow">
+                        ←
+                    </span>
+
+                </button>
+
+
+                <div class="payment-note">
+
+                    🔒 پرداخت امن و مطمئن
+
+                </div>
+
+
+            </section>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="checkout-footer">
+
+        <div>
+            © دردونه - تمامی حقوق محفوظ است
+        </div>
+
+        <div>
+            خرید امن • پشتیبانی • ضمانت بازگشت
+        </div>
+
+    </footer>
+
+
+
+    <script src="E-commerce-New/js/checkout.js"></script>
+
+</body>
+
+</html>

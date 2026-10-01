@@ -1,0 +1,1053 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* هدر */
+
+.header {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 11000;
+  position: fixed;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* vertical-align: top; */
+
+  /* position: fixed; */
+  /* background-color: white; */
+  /* top: 0px; */
+  /* left: 0px; */
+  /* right: 0px; */
+  /* height: 65px !important; */
+  border: solid 1px rgb(193, 190, 190);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(220, 221, 221);
+}
+
+.header-center {
+  display: flex;
+  text-align: right;
+  /* flex: 1; */
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  width: 250px !important;
+
+  /* vertical-align: top; */
+  /* width: 200; */
+}
+
+.pipe {
+  margin: 0px;
+  font-size: 26px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  color: rgb(217, 217, 217);
+}
+
+/* .bel99:hover {
+  cursor: pointer;
+} */
+
+.sabtnam:hover {
+  cursor: pointer;
+}
+
+.vorod,
+.enter-icon:hover {
+  cursor: pointer;
+}
+.sabtnam,
+.vorod {
+  margin-left: 5px;
+  font-weight: 500;
+  padding-top: 0px;
+  /* margin-top: 5px; */
+  margin-right: 5px;
+  /* vertical-align: ; */
+}
+
+.header-right {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  height: 35px !important;
+  /* width: 200px; */
+}
+
+/* 
+.top1 {
+  height: 80px;
+  background-color: rgb(239, 226, 252);
+} */
+
+.div-enter {
+  width: 132px;
+  height: 35px;
+  padding: 0%;
+  border-radius: 12px;
+  border: solid rgb(213, 211, 211) 1px;
+  vertical-align: top;
+  font: weight bold;
+  /* font-size:12px ; */
+}
+/* 
+.basket {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.basket:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(197, 197, 197);
+  border-radius: 15px;
+}
+ */
+.input-search {
+  direction: rtl;
+  background-color: rgb(244, 242, 242);
+  border-radius: 20px;
+  text-align: right;
+  font-size: 17px;
+  color: red;
+  height: 40px;
+  /* margin-right: 100px; */
+  width: 500px;
+  border: none;
+  padding-right: 30px;
+}
+
+.input-search::placeholder {
+  color: rgb(29, 113, 165);
+}
+
+.btn1 {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  height: 10px !important;
+}
+
+.div-enter {
+  margin: 0px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* margin-top: -20px; */
+  /* height: 40px; */
+  /* margin-top: 17px; */
+}
+
+.bell-main:hover {
+  cursor: pointer;
+  /* box-shadow: 5px 5px 5px rgb(197, 197, 197); */
+  color: rgb(91, 90, 90);
+  /* background-color: gray; */
+  /* border-radius: 5px; */
+}
+
+/* .bell-main {
+  position: relative;
+  margin-left: 12px;
+} */
+
+.counter-continer {
+  position: relative;
+  top: 8px;
+}
+
+.cart-counter {
+  position: absolute;
+  right: 0px;
+  top: -8px !important;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fb1d1d;
+  color: white;
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.cart-counter:hover {
+  cursor: pointer;
+}
+
+.tooltip1 {
+  position: absolute;
+  background-color: rgb(180, 176, 176);
+  border-radius: 5px;
+  top: 30px !important;
+  padding: 2px 5px;
+  white-space: nowrap;
+  color: white;
+  left: 40px;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.basket999:hover .tooltip1,
+.notifi-bell:hover .tooltip2 {
+  opacity: 1;
+}
+
+.tooltip2 {
+  position: absolute;
+  background-color: rgb(180, 176, 176);
+  border-radius: 5px;
+  top: -30;
+  padding: 2px 5px;
+  white-space: nowrap;
+  color: white;
+  left: 5px;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+/* .arm, */
+.dordou {
+  height: 68px !important;
+  margin-right: 10px;
+  margin-top: 10px !important;
+}
+
+.menu1 {
+  height: 60px;
+  /* filter: brightness(120%) ; */
+}
+
+.menu1:hover {
+  cursor: pointer;
+}
+.magnif {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: x-large;
+}
+
+.magnif:hover {
+  cursor: pointer;
+}
+
+/* هدر */
+
+.bell-font::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0f3";
+}
+
+.notifi-bell {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  left: 7px;
+  top: 6px;
+}
+.bell-main::before {
+  font-family: "Font Awesome 6 Free";
+  font-family: 900;
+  content: "\f0f3";
+  font-size: x-larger;
+  font-size: 22px;
+  color: rgb(87, 86, 86);
+}
+
+.notifi-bell-count {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  width: 17px;
+  height: 17px;
+  background-color: rgb(239, 7, 7);
+  color: white;
+  border-radius: 50%;
+
+  font-size: 15px;
+  text-align: center;
+  line-height: 17px;
+}
+
+.shopping-cart::before {
+  font-family: "Font Awesome 6 Free";
+  font-family: 900;
+  content: "\f07a";
+  font-size: x-larger;
+  font-size: 22px;
+  color: rgb(87, 86, 86);
+}
+.shopping-cart {
+  cursor: pointer;
+  /* font-size: xx-small; */
+  color: blue;
+}
+.shopping-cart:hover {
+  cursor: pointer;
+}
+
+.enter-icon {
+  margin-top: 17px !important;
+}
+.enter-icon:before {
+  color: rgb(87, 86, 86);
+  top: 12px;
+  border-radius: 10px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f2f6";
+  font-size: x-large;
+}
+
+.digital::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f3cd";
+}
+
+.discount-menu::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f02c";
+}
+.modvapu::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f553";
+}
+.home::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f015";
+}
+.butyhealth::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f21e";
+}
+
+.sport::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f6ec";
+}
+.porfo::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f06d";
+}
+.product::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f005";
+}
+
+.sport::before,
+.butyhealth::before,
+.discount-menu::before,
+.porfo::before,
+.product::before,
+.home::before,
+.modvapu::before,
+.digital::before {
+  color: rgb(6, 199, 170);
+}
+
+.daste {
+  font-size: large;
+}
+
+/* **************************منو */
+.Horiz-menu {
+  direction: rtl !important;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  /* border-top: none; */
+  height: 40px;
+  /* width: 100%; */
+  /* background-color: rgba(255, 255, 255); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 12000;
+  position: fixed;
+  border: solid 1px rgb(193, 190, 190);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(220, 221, 221);
+  top: 68px;
+  background: #ffffff;
+  /* border-bottom: 1px solid #eee; */
+  justify-content: left;
+}
+
+.Horiz-menu ul {
+  /* display: flex; */
+  /* list-style: none; */
+  margin: 0;
+  /* padding: 0; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Horiz-menu li {
+  margin: 0;
+}
+
+.Horiz-menu a {
+  /* display: block; */
+  /* padding: 18px 20px; */
+  /* text-decoration: none; */
+  /* color: #333; */
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 18px;
+
+  color: #333;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.Horiz-menu a:hover {
+  /* color: #7b2cbf;
+  background-color: #f7f0fc; */
+
+  background-color: #bef8ed;
+  color: #330a3e;
+  border-radius: 12px;
+}
+
+/* *************************منو */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.basket999 {
+  position: relative;
+  top: -8px;
+  width: 46px;
+
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f7f7fa;
+
+  color: #444;
+
+  transition: 0.25s;
+
+  cursor: pointer;
+}
+
+.basket999:hover {
+  background: #eaf8e9;
+
+  color: #41b5ad;
+
+  transform: translateY(-2px);
+}
+
+.basket999 i {
+  font-size: 20px;
+}
+
+#cart-counter {
+  position: absolute;
+
+  top: -5px;
+
+  right: -3px;
+
+  min-width: 21px;
+
+  height: 21px;
+
+  padding: 0 5px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ed4545;
+
+  color: white;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  border: 2px solid white;
+}
+
+.dordou:hover {
+  transform: scale(1.05);
+
+  transition: 0.75s;
+}
+
+/* از اینجا افکتهای جدید سبد می باشد */
+
+/* =========================================================
+   CART ADD - PROFESSIONAL MICRO INTERACTION
+========================================================= */
+
+/* کارت محصول هنگام اضافه شدن */
+.product-card.cart-added {
+  animation: productCardPulse 0.55s ease;
+  position: relative;
+  z-index: 10;
+}
+
+/* نور اطراف کارت */
+.product-card.cart-added::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  pointer-events: none;
+
+  box-shadow:
+    0 0 0 2px rgba(6, 199, 170, 0.15),
+    0 0 25px rgba(6, 199, 170, 0.45);
+
+  animation: cardGlow 0.65s ease;
+}
+
+/* تصویر محصول */
+.product-card.cart-added img {
+  animation: productImageZoom 0.55s ease;
+}
+
+/* =========================================================
+   دکمه افزودن به سبد
+========================================================= */
+
+.product-card .add-to-cart {
+  position: relative;
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* نور عبوری روی دکمه */
+.product-card .add-to-cart ::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.65),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+}
+
+/* فعال شدن افکت */
+/* .product-card .add-to-cart.cart-success {
+  background: #06c7aa !important;
+  color: white !important;
+
+  transform: scale(1.04);
+
+  box-shadow:
+    0 0 10px rgba(6,199,170,0.45),
+    0 0 25px rgba(6,199,170,0.25);
+} */
+/* =========================================================
+   دکمه افزودن به سبد - هر دو نوع محصول
+========================================================= */
+
+.product-card .add-to-cart,
+.card-card .add-to-cart1 {
+  position: relative;
+  overflow: hidden;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* حالت موفقیت */
+.product-card .add-to-cart.cart-success,
+.card-card .add-to-cart1.cart-success {
+  background: #06c7aa !important;
+
+  color: #ffffff !important;
+
+  transform: scale(1.04);
+
+  box-shadow:
+    0 0 8px rgba(6, 199, 170, 0.45),
+    0 0 20px rgba(6, 199, 170, 0.35);
+}
+
+/* خط نورانی روی دکمه */
+.product-card .add-to-cart::before,
+.card-card .add-to-cart1::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.65),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  pointer-events: none;
+}
+
+/* اجرای نور هنگام موفقیت */
+.product-card .add-to-cart.cart-success::before,
+.card-card .add-to-cart1.cart-success::before {
+  animation: buttonShine 0.55s ease;
+}
+
+/* انیمیشن نور */
+@keyframes buttonShine {
+  0% {
+    left: -120%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+.product-card .add-to-cart.cart-success::before {
+  animation: buttonShine 0.55s ease;
+}
+
+/* =========================================================
+   سبد خرید هدر
+========================================================= */
+
+.basket999.cart-bounce {
+  animation: cartBounce 0.7s cubic-bezier(0.17, 0.67, 0.35, 1.4);
+}
+
+/* حلقه نور اطراف سبد */
+.basket999.cart-bounce::after {
+  content: "";
+
+  position: absolute;
+  inset: -7px;
+
+  border-radius: 50%;
+
+  border: 2px solid rgba(6, 199, 170, 0.65);
+
+  animation: cartRing 0.7s ease-out;
+  pointer-events: none;
+}
+
+/* =========================================================
+   شمارنده سبد
+========================================================= */
+
+#cart-counter.cart-counter-pop {
+  animation: counterPop 0.55s cubic-bezier(0.17, 0.67, 0.35, 1.5);
+}
+
+/* =========================================================
+   توپ نورانی که به سمت سبد حرکت می‌کند
+========================================================= */
+
+.cart-fly-dot {
+  position: fixed;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background: #06c7aa;
+
+  box-shadow:
+    0 0 6px #06c7aa,
+    0 0 15px rgba(6, 199, 170, 0.8),
+    0 0 30px rgba(6, 199, 170, 0.45);
+
+  z-index: 999999;
+
+  pointer-events: none;
+
+  transform: translate(-50%, -50%);
+}
+
+/* =========================================================
+   Toast
+========================================================= */
+
+.cart-toast {
+  position: fixed;
+
+  top: 88px;
+  right: 25px;
+
+  min-width: 240px;
+
+  padding: 13px 18px;
+
+  border-radius: 14px;
+
+  background: rgba(35, 35, 35, 0.94);
+
+  color: white;
+
+  font-family: Tahoma, Arial, sans-serif;
+
+  font-size: 14px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+
+  z-index: 999998;
+
+  opacity: 0;
+
+  transform: translateY(-15px) scale(0.92);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.cart-toast.show {
+  opacity: 1;
+
+  transform: translateY(0) scale(1);
+}
+
+.cart-toast.success {
+  border-right: 4px solid #06c7aa;
+}
+
+/* =========================================================
+   Animations
+========================================================= */
+
+@keyframes productCardPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(1.025);
+  }
+
+  70% {
+    transform: scale(0.99);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes productImageZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cardGlow {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes buttonShine {
+  0% {
+    left: -120%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes cartBounce {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.25) rotate(-7deg);
+  }
+
+  45% {
+    transform: scale(0.92) rotate(5deg);
+  }
+
+  65% {
+    transform: scale(1.12) rotate(-3deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes cartRing {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.7);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes counterPop {
+  0% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(1.45);
+  }
+
+  60% {
+    transform: scale(0.85);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+  .cart-toast {
+    right: 10px;
+    left: 10px;
+    width: auto;
+    min-width: 0;
+  }
+}
+
+/* =========================================================
+   افکت حرفه ای سبد خرید هنگام داشتن محصول
+========================================================= */
+
+.basket999.cart-has-items {
+  position: relative;
+  color: #06bfa6;
+  background: #effffb;
+
+  animation:
+    cartIdleGlow 1.8s ease-in-out infinite,
+    cartFloat 2.4s ease-in-out infinite;
+
+  box-shadow:
+    0 0 0 0 rgba(6, 191, 166, 0.35),
+    0 0 18px rgba(6, 191, 166, 0.25);
+}
+
+/* حلقه نورانی دور سبد */
+.basket999.cart-has-items::after {
+  content: "";
+  position: absolute;
+
+  inset: -5px;
+
+  border-radius: 50%;
+
+  border: 2px solid rgba(6, 191, 166, 0.45);
+
+  pointer-events: none;
+
+  animation: cartPulseRing 1.8s ease-out infinite;
+}
+
+/* نور نرم پشت آیکون */
+.basket999.cart-has-items::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 3px;
+
+  border-radius: 50%;
+
+  background: rgba(6, 191, 166, 0.1);
+
+  pointer-events: none;
+
+  animation: cartInnerGlow 1.8s ease-in-out infinite;
+}
+
+/* خود آیکون */
+.basket999.cart-has-items i {
+  position: relative;
+  z-index: 2;
+
+  animation: cartIconGlow 1.8s ease-in-out infinite;
+}
+
+/* =========================================================
+   انیمیشن ها
+========================================================= */
+
+@keyframes cartIdleGlow {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(6, 191, 166, 0.15),
+      0 0 10px rgba(6, 191, 166, 0.15);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 6px rgba(6, 191, 166, 0.08),
+      0 0 28px rgba(6, 191, 166, 0.55);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(6, 191, 166, 0.15),
+      0 0 10px rgba(6, 191, 166, 0.15);
+  }
+}
+
+@keyframes cartFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes cartPulseRing {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.8;
+  }
+
+  70% {
+    transform: scale(1.18);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.18);
+    opacity: 0;
+  }
+}
+
+@keyframes cartInnerGlow {
+  0%,
+  100% {
+    transform: scale(0.9);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+@keyframes cartIconGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px rgba(6, 191, 166, 0.2));
+  }
+
+  50% {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 8px rgba(6, 191, 166, 0.9));
+  }
+}

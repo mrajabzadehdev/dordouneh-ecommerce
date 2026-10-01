@@ -1,0 +1,1345 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8f7fb 0%,
+            #f4f4f7 100%
+        );
+
+    color: #252525;
+
+    font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+@font-face {
+
+    font-family: "Vazirmatn";
+
+    src:
+        url("../fonts/Vazirmatn-Regular.woff2")
+        format("woff2");
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    font-display: swap;
+}
+
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.checkout-header {
+
+    width: 100%;
+
+    min-height: 86px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #e8e8ed;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 12px 6%;
+
+    position: relative;
+
+    z-index: 10;
+
+    box-shadow:
+        0 3px 20px rgba(0, 0, 0, 0.04);
+}
+
+
+.header-right,
+.header-left {
+
+    width: 220px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.header-left {
+
+    justify-content: flex-end;
+}
+
+
+/* =====================================================
+   BACK HOME
+===================================================== */
+
+.back-home {
+
+    text-decoration: none;
+
+    color: #555;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+
+    transition: 0.25s;
+}
+
+
+.back-home span {
+
+    font-size: 22px;
+
+    transition: 0.25s;
+}
+
+
+.back-home:hover {
+
+    color: #6815a9;
+}
+
+
+.back-home:hover span {
+
+    transform: translateX(4px);
+        /* transition: 0.75s; */
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.checkout-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    text-align: center;
+}
+
+
+.dordou {
+
+    width: 200px;
+
+    height: 58px;
+
+    object-fit: cover;
+
+    /* border-radius: 50%; */
+
+    /* border: 3px solid #f0e4f8; */
+
+    /* box-shadow:
+        0 4px 12px rgba(106, 27, 154, 0.15); */
+}
+
+
+.checkout-title > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2px;
+}
+
+
+.checkout-title span {
+
+    color: #6411a2;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+.checkout-title small {
+
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   SECURE
+===================================================== */
+
+.secure-checkout {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #438b62;
+
+    font-size: 13px;
+
+    background: #f0faf4;
+
+    padding: 8px 13px;
+
+    border-radius: 30px;
+}
+
+
+.secure-icon {
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   PROGRESS
+===================================================== */
+
+.checkout-progress {
+
+    width: min(760px, 90%);
+
+    margin: 30px auto 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.progress-step {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+.step-circle {
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: #e8e8ed;
+
+    color: #999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+
+.progress-step.active {
+
+    color: #6815a9;
+
+    font-weight: bold;
+}
+
+
+.progress-step.active .step-circle {
+
+    background: #6815a9;
+
+    color: white;
+
+    box-shadow:
+        0 5px 15px rgba(104, 21, 169, 0.25);
+}
+
+
+.progress-step.completed {
+
+    color: #4a9667;
+}
+
+
+.progress-step.completed .step-circle {
+
+    background: #4a9667;
+
+    color: white;
+}
+
+
+.progress-line {
+
+    height: 2px;
+
+    width: 110px;
+
+    background: #ddd;
+
+    margin: 0 12px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.checkout-container {
+
+    width: min(1180px, 92%);
+
+    margin: 35px auto 70px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        390px;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+.checkout-main {
+
+    min-width: 0;
+}
+
+
+.order-sidebar {
+
+    position: sticky;
+
+    top: 20px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.checkout-section {
+
+    background: #fff;
+
+    border: 1px solid #eeeeF2;
+
+    border-radius: 18px;
+
+    padding: 26px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 8px 30px rgba(30, 20, 50, 0.055);
+}
+
+
+.section-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #f0f0f3;
+}
+
+
+.section-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    border-radius: 13px;
+
+    background: #f5edfa;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+
+.section-header h2 {
+
+    font-size: 17px;
+
+    color: #292929;
+
+    margin-bottom: 4px;
+}
+
+
+.section-header p {
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.form-group {
+
+    margin-bottom: 20px;
+}
+
+
+.form-group:last-child {
+
+    margin-bottom: 0;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #444;
+
+    margin-bottom: 9px;
+}
+
+
+.input-wrapper {
+
+    position: relative;
+}
+
+
+.input-icon {
+
+    position: absolute;
+
+    right: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 17px;
+
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid #dedee5;
+
+    background: #fafafd;
+
+    color: #333;
+
+    border-radius: 11px;
+
+    padding: 13px 45px 13px 14px;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s,
+        background 0.2s;
+}
+
+
+.form-group textarea {
+
+    padding: 14px;
+
+    resize: vertical;
+
+    min-height: 110px;
+
+    line-height: 2;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #b3b3b8;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    background: #fff;
+
+    border-color: #7419ae;
+
+    box-shadow:
+        0 0 0 4px rgba(116, 25, 174, 0.08);
+}
+
+
+.input-help {
+
+    display: block;
+
+    margin-top: 7px;
+
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   SECURITY BOX
+===================================================== */
+
+.security-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    background: linear-gradient(
+        135deg,
+        #f0faf4,
+        #f7fcf8
+    );
+
+    border: 1px solid #dcefe3;
+
+    border-radius: 15px;
+
+    padding: 17px;
+
+    margin-bottom: 20px;
+}
+
+
+.security-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: #dcf3e4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+
+.security-box strong {
+
+    font-size: 13px;
+
+    color: #367b51;
+}
+
+
+.security-box p {
+
+    margin-top: 4px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   ORDER SUMMARY
+===================================================== */
+
+.order-summary {
+
+    padding: 24px;
+}
+
+
+.summary-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #eee;
+
+    margin-bottom: 15px;
+}
+
+
+.summary-header h2 {
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+
+.summary-header span {
+
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+.summary-cart-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 12px;
+
+    background: #f5edfa;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+/* =====================================================
+   PRODUCT
+===================================================== */
+
+#checkout-products {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    max-height: 390px;
+
+    overflow-y: auto;
+
+    padding-left: 3px;
+}
+
+
+.checkout-product {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px;
+
+    border-radius: 12px;
+
+    background: #fafafd;
+
+    border: 1px solid #f0f0f3;
+}
+
+
+.product-image {
+
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+
+    background: #f2f2f2;
+}
+
+
+.product-info {
+
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.product-title {
+
+    display: block;
+
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.product-quantity {
+
+    color: #999;
+
+    font-size: 11px;
+
+    margin-bottom: 5px;
+}
+
+
+.product-price {
+
+    color: #6715a5;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.empty-cart {
+
+    text-align: center;
+
+    padding: 30px 10px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   SUMMARY ROW
+===================================================== */
+
+.summary-divider {
+
+    height: 1px;
+
+    background: #eee;
+
+    margin: 18px 0;
+}
+
+
+.summary-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 9px 0;
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+.summary-row strong {
+
+    color: #333;
+
+    font-size: 13px;
+}
+
+
+.discount-row strong {
+
+    color: #e35d6a;
+}
+
+
+.shipping-free {
+
+    color: #3e9661 !important;
+}
+
+
+/* =====================================================
+   FINAL PRICE
+===================================================== */
+
+.final-price {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.final-price span {
+
+    color: #444;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.final-price strong {
+
+    color: #6411a2;
+
+    font-size: 19px;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.submit-order {
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 15px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7517ad,
+            #57118a
+        );
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 8px 18px rgba(103, 21, 165, 0.20);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.submit-order:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(103, 21, 165, 0.28);
+}
+
+
+.submit-order:active {
+
+    transform: translateY(0);
+}
+
+
+.button-arrow {
+
+    font-size: 20px;
+
+    transition: 0.2s;
+}
+
+
+.submit-order:hover .button-arrow {
+
+    transform: translateX(-4px);
+}
+
+
+.payment-note {
+
+    text-align: center;
+
+    margin-top: 12px;
+
+    color: #999;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   MOBILE SUBMIT
+===================================================== */
+
+.mobile-submit {
+
+    display: none;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.checkout-footer {
+
+    width: 100%;
+
+    padding: 22px 6%;
+
+    border-top: 1px solid #e6e6e9;
+
+    background: #fff;
+
+    color: #999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+#checkout-products::-webkit-scrollbar {
+
+    width: 5px;
+}
+
+
+#checkout-products::-webkit-scrollbar-track {
+
+    background: transparent;
+}
+
+
+#checkout-products::-webkit-scrollbar-thumb {
+
+    background: #ddd;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .checkout-container {
+
+        grid-template-columns: 1fr;
+
+        width: 94%;
+    }
+
+
+    .order-sidebar {
+
+        position: static;
+
+        order: -1;
+    }
+
+
+    .order-summary {
+
+        margin-bottom: 20px;
+    }
+
+
+    #checkout-products {
+
+        max-height: none;
+    }
+
+
+    .mobile-submit {
+
+        display: flex;
+    }
+
+
+    .order-sidebar .submit-order {
+
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .checkout-header {
+
+        min-height: 72px;
+
+        padding: 10px 15px;
+    }
+
+
+    .header-right,
+    .header-left {
+
+        width: auto;
+    }
+
+
+    .secure-checkout {
+
+        padding: 7px 9px;
+
+        font-size: 0;
+    }
+
+
+    .secure-icon {
+
+        font-size: 15px;
+    }
+
+
+    .checkout-title {
+
+        gap: 8px;
+    }
+
+
+    .dordou {
+
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .checkout-title span {
+
+        font-size: 16px;
+    }
+
+
+    .checkout-title small {
+
+        display: none;
+    }
+
+
+    .checkout-progress {
+
+        margin-top: 22px;
+    }
+
+
+    .progress-line {
+
+        width: 45px;
+
+        margin-left: 7px;
+
+        margin-right: 7px;
+    }
+
+
+    .progress-step {
+
+        font-size: 10px;
+    }
+
+
+    .step-circle {
+
+        width: 30px;
+
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+
+    .checkout-container {
+
+        width: 94%;
+
+        margin-top: 25px;
+    }
+
+
+    .checkout-section {
+
+        padding: 18px;
+
+        border-radius: 15px;
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .section-header {
+
+        gap: 10px;
+    }
+
+
+    .section-icon {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+
+    .section-header h2 {
+
+        font-size: 15px;
+    }
+
+
+    .section-header p {
+
+        font-size: 10px;
+    }
+
+
+    .final-price strong {
+
+        font-size: 16px;
+    }
+
+
+    .checkout-footer {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .back-home {
+
+        font-size: 0;
+    }
+
+
+    .back-home span {
+
+        font-size: 23px;
+    }
+
+
+    .checkout-title span {
+
+        font-size: 14px;
+    }
+
+
+    .dordou {
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .checkout-progress {
+
+        width: 96%;
+    }
+
+
+    .progress-line {
+
+        width: 30px;
+    }
+
+
+    .progress-step span {
+
+        font-size: 9px;
+    }
+
+
+    .product-image {
+
+        width: 55px;
+
+        height: 55px;
+    }
+
+}
+
+.dordou:hover {
+
+    transform:
+        scale(1.05);
+            transition: 0.75s;
+}

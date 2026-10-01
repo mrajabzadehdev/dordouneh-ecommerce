@@ -1,0 +1,190 @@
+
+
+.sidebar {
+  direction: rtl;
+  /* position: fixed; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* width: 180px; */
+  flex-shrink: 0;
+  /* background-color: aquamarine; */
+  /* top: 70px; */
+
+  /* =========================
+   Sidebar
+========================= */
+
+  /* .sidebar-container { */
+
+  position: fixed;
+  top: 113px;
+  right: 0;
+  bottom: 0;
+
+  /* width: 180px; */
+  width: calc(12%);
+
+  background-color: #ffffff;
+  border-left: 1px solid #eeeeee;
+
+  padding: 15px 10px;
+
+  overflow-y: auto;
+
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: -2px -2px 4px rgb(220, 221, 221);
+}
+
+/* عنوان سایدبار */
+
+.sidebar-title {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+/* vertical-align: auto; */
+  margin-bottom: 5px;
+  padding: 0px;
+
+  color: #333;
+}
+
+/* لیست منو */
+.daste{
+  margin-top: 15px;
+}
+.sidebar-menu {
+  /* font-size: xx-large!important; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* آیتم‌های منو */
+
+.sidebar-menu li {
+  margin-bottom: 5px;
+}
+
+/* لینک‌های منو */
+
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px;
+
+  text-decoration: none;
+
+  color: #333;
+  font-size: 15px;
+
+  border-radius: 10px;
+
+  transition: 0.4s;
+}
+
+/* حالت Hover */
+
+.sidebar-menu li a:hover {
+  background-color: #bef8ed;
+  color: #330a3e;
+}
+
+/* آیتم فعال */
+
+.sidebar-menu li a.active {
+  background-color: #0fb3c8;
+  color: white;
+}
+
+/* آیکن منو */
+
+.sidebar-menu li a i {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+/* محتوای اصلی صفحه */
+
+.main-content {
+  margin-right: 180px;
+  padding: 15px;
+}
+
+
+.menu2{
+  width: 50px;
+}
+
+/* =========================================================
+   SIDEBAR - DIGITAL SUBMENU
+========================================================= */
+
+.sidebar-has-submenu {
+    position: relative;
+}
+
+
+/* زیرمنو در حالت عادی مخفی است */
+
+.sidebar-submenu {
+    list-style: none;
+
+    margin: 0;
+    padding: 0 10px 0 0;
+
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.3s ease,
+        opacity 0.25s ease;
+}
+
+
+/* وقتی موس روی کالای دیجیتال یا زیرمنو باشد */
+
+.sidebar-has-submenu:hover .sidebar-submenu {
+    max-height: 300px;
+    opacity: 1;
+}
+
+
+/* لینک‌های زیرمنو */
+
+.sidebar-submenu li {
+    margin-bottom: 3px;
+}
+
+
+.sidebar-submenu li a {
+    display: block;
+
+    padding: 7px 10px;
+
+    font-size: 13px;
+
+    color: #555;
+
+    background-color: #fafafa;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+
+/* Hover روی زیرمنو */
+
+.sidebar-submenu li a:hover {
+    background-color: #bef8ed;
+    color: #330a3e;
+}

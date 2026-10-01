@@ -1,0 +1,1305 @@
+/* =========================================================
+   BANNER / SLIDER
+   Final Responsive Version
+   هماهنگ با Advertisement
+   Sidebar Width = 12%
+========================================================= */
+
+
+/* =========================================================
+   BANNER CONTAINER
+========================================================= */
+
+.container2 {
+
+    /*
+       همان عرض Advertisement
+    */
+    width: calc(82% - 45px);
+
+    /*
+       فاصله از Sidebar
+    */
+    margin-right: calc(12% + 15px);
+
+    /*
+       فاصله از سمت چپ
+    */
+    margin-left: 6%;
+
+    margin-top: 125px;
+
+    margin-bottom: 15px;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.slider2 {
+
+    position: relative;
+
+    width: 100%;
+
+    /*
+       دیگر max-width محدودکننده نداریم
+       تا دقیقاً با container2 هماهنگ باشد.
+    */
+    max-width: 100%;
+
+    height: 300px;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: #111827;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.18);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SLIDES CONTAINER
+========================================================= */
+
+.slides2 {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SINGLE SLIDE
+========================================================= */
+
+.slide2 {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 300px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+    transition:
+        opacity 0.5s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ACTIVE SLIDE
+========================================================= */
+
+.slide2.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   SLIDE IMAGE
+========================================================= */
+
+.slide2 img {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 300px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    margin: 0;
+    padding: 0;
+
+    transform: scale(1);
+
+    transition:
+        transform 5s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ACTIVE IMAGE
+========================================================= */
+
+.slide2.active img {
+
+    transform: scale(1);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 300px;
+
+    z-index: 1;
+
+    background: transparent;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SLIDE CONTENT
+========================================================= */
+
+.slide2-content {
+
+    position: absolute;
+
+    top: 85%;
+
+    right: 45%;
+
+    transform:
+        translateY(-50%);
+
+    width: min(600px, 70%);
+
+    z-index: 3;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT INITIAL STATE
+========================================================= */
+
+.slide2-content > * {
+
+    opacity: 0;
+
+    transform:
+        translateY(25px);
+}
+
+
+/* =========================================================
+   CONTENT ANIMATION
+========================================================= */
+
+.slide2.active .slide2-content > * {
+
+    animation:
+        contentIn 0.8s ease forwards;
+}
+
+
+/* =========================================================
+   ANIMATION DELAYS
+========================================================= */
+
+.slide2.active .badge {
+
+    animation-delay:
+        0.15s;
+}
+
+
+.slide2.active h1 {
+
+    animation-delay:
+        0.30s;
+}
+
+
+.slide2.active p {
+
+    animation-delay:
+        0.45s;
+}
+
+
+.slide2.active .cta {
+
+    animation-delay:
+        0.60s;
+}
+
+
+/* =========================================================
+   CONTENT ANIMATION
+========================================================= */
+
+@keyframes contentIn {
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.badge {
+
+    display: inline-block;
+
+    padding:
+        8px 16px;
+
+    margin-bottom:
+        18px;
+
+    border-radius:
+        50px;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.25);
+
+    font-size:
+        14px;
+}
+
+
+/* =========================================================
+   SLIDE TITLE
+========================================================= */
+
+.slide2-content h1 {
+
+    font-size:
+        clamp(32px, 5vw, 64px);
+
+    line-height:
+        1.25;
+
+    margin:
+        0 0 20px 0;
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   SLIDE TEXT
+========================================================= */
+
+.slide2-content p {
+
+    font-size:
+        18px;
+
+    line-height:
+        2;
+
+    color:
+        rgba(255, 255, 255, 0.85);
+
+    margin:
+        0 0 30px 0;
+
+    max-width:
+        550px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+
+    display: inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        13px 28px;
+
+    border-radius:
+        10px;
+
+    background:
+        #ffffff;
+
+    color:
+        #111827;
+
+    text-decoration:
+        none;
+
+    font-size:
+        15px;
+
+    font-weight:
+        bold;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================================
+   CTA HOVER
+========================================================= */
+
+.cta:hover {
+
+    transform:
+        translateY(-3px);
+
+    background:
+        #f8fafc;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   SLIDER BUTTON
+========================================================= */
+
+.slider2-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    z-index: 5;
+
+    width: 52px;
+
+    height: 52px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.25);
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255, 255, 255, 0.16);
+
+    color:
+        #ffffff;
+
+    font-size:
+        24px;
+
+    cursor:
+        pointer;
+
+    box-sizing:
+        border-box;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+========================================================= */
+
+.slider2-btn:hover {
+
+    background:
+        rgba(255, 255, 255, 0.30);
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+}
+
+
+/* =========================================================
+   PREVIOUS BUTTON
+========================================================= */
+
+.prev {
+
+    left:
+        25px;
+}
+
+
+/* =========================================================
+   NEXT BUTTON
+========================================================= */
+
+.next {
+
+    right:
+        25px;
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.dots {
+
+    position: absolute;
+
+    bottom:
+        25px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    z-index:
+        6;
+}
+
+
+/* =========================================================
+   DOT
+========================================================= */
+
+.dot {
+
+    width:
+        10px;
+
+    height:
+        10px;
+
+    padding:
+        0;
+
+    border:
+        none;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255, 255, 255, 0.45);
+
+    cursor:
+        pointer;
+
+    transition:
+        width 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================================
+   ACTIVE DOT
+========================================================= */
+
+.dot.active {
+
+    width:
+        30px;
+
+    border-radius:
+        20px;
+
+    background:
+        #ffffff;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progress {
+
+    position: absolute;
+
+    left:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        100%;
+
+    height:
+        4px;
+
+    background:
+        rgba(255, 255, 255, 0.20);
+
+    z-index:
+        10;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress-bar {
+
+    width:
+        0;
+
+    height:
+        100%;
+
+    background:
+        #ffffff;
+
+    transform-origin:
+        left;
+
+    animation:
+        progressAnimation
+        5s linear infinite;
+}
+
+
+/* =========================================================
+   PROGRESS ANIMATION
+========================================================= */
+
+@keyframes progressAnimation {
+
+    from {
+
+        width:
+            0;
+    }
+
+    to {
+
+        width:
+            100%;
+    }
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .container2 {
+
+        width:
+            calc(88% - 40px);
+
+        margin-right:
+            calc(12% + 10px);
+
+        margin-left:
+            25px;
+    }
+
+
+    .slider2 {
+
+        height:
+            280px;
+    }
+
+
+    .slides2 {
+
+        height:
+            280px;
+    }
+
+
+    .slide2 {
+
+        height:
+            280px;
+    }
+
+
+    .slide2 img {
+
+        height:
+            280px;
+    }
+
+
+    .overlay {
+
+        height:
+            280px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .container2 {
+
+        width:
+            calc(88% - 30px);
+
+        margin-right:
+            calc(12% + 7px);
+
+        margin-left:
+            20px;
+    }
+
+
+    .slider2 {
+
+        height:
+            260px;
+    }
+
+
+    .slides2 {
+
+        height:
+            260px;
+    }
+
+
+    .slide2 {
+
+        height:
+            260px;
+    }
+
+
+    .slide2 img {
+
+        height:
+            260px;
+    }
+
+
+    .overlay {
+
+        height:
+            260px;
+    }
+
+
+    .slider2-btn {
+
+        width:
+            46px;
+
+        height:
+            46px;
+
+        font-size:
+            21px;
+    }
+
+
+    .prev {
+
+        left:
+            18px;
+    }
+
+
+    .next {
+
+        right:
+            18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .container2 {
+
+        width:
+            calc(100% - 40px);
+
+        margin-right:
+            20px;
+
+        margin-left:
+            20px;
+
+        margin-top:
+            20px;
+
+        margin-bottom:
+            15px;
+
+        padding:
+            0;
+    }
+
+
+    .slider2 {
+
+        width:
+            100%;
+
+        height:
+            300px;
+
+        border-radius:
+            18px;
+    }
+
+
+    .slides2 {
+
+        height:
+            300px;
+    }
+
+
+    .slide2 {
+
+        height:
+            300px;
+    }
+
+
+    .slide2 img {
+
+        height:
+            300px;
+    }
+
+
+    .overlay {
+
+        height:
+            300px;
+    }
+
+
+    .slide2-content {
+
+        right:
+            8%;
+
+        left:
+            8%;
+
+        width:
+            auto;
+
+        text-align:
+            center;
+    }
+
+
+    .slide2-content h1 {
+
+        font-size:
+            28px;
+    }
+
+
+    .slide2-content p {
+
+        font-size:
+            14px;
+
+        line-height:
+            1.8;
+    }
+
+
+    .slider2-btn {
+
+        width:
+            42px;
+
+        height:
+            42px;
+
+        font-size:
+            19px;
+    }
+
+
+    .prev {
+
+        left:
+            12px;
+    }
+
+
+    .next {
+
+        right:
+            12px;
+    }
+
+
+    .cta {
+
+        padding:
+            12px 24px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .container2 {
+
+        width:
+            calc(100% - 30px);
+
+        margin-right:
+            15px;
+
+        margin-left:
+            15px;
+    }
+
+
+    .slider2 {
+
+        height:
+            260px;
+    }
+
+
+    .slides2 {
+
+        height:
+            260px;
+    }
+
+
+    .slide2 {
+
+        height:
+            260px;
+    }
+
+
+    .slide2 img {
+
+        height:
+            260px;
+    }
+
+
+    .overlay {
+
+        height:
+            260px;
+    }
+
+
+    .dots {
+
+        bottom:
+            18px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .container2 {
+
+        width:
+            calc(100% - 24px);
+
+        margin-right:
+            12px;
+
+        margin-left:
+            12px;
+    }
+
+
+    .slider2 {
+
+        height:
+            240px;
+    }
+
+
+    .slides2 {
+
+        height:
+            240px;
+    }
+
+
+    .slide2 {
+
+        height:
+            240px;
+    }
+
+
+    .slide2 img {
+
+        height:
+            240px;
+    }
+
+
+    .overlay {
+
+        height:
+            240px;
+    }
+}
+
+
+/* =========================================================
+   BOX SIZING
+========================================================= */
+
+.container2 *,
+.container2 *::before,
+.container2 *::after {
+
+    box-sizing:
+        border-box;
+}
+
+/* =========================================================
+   DIGITAL CATEGORY - PREMIUM SUBMENU
+========================================================= */
+
+.has-submenu {
+    position: relative;
+}
+
+/* =========================================================
+   SUBMENU BOX
+========================================================= */
+
+.has-submenu > .submenu {
+
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 0;
+
+    /* 30 درصد عریض‌تر از عرض فعلی */
+    width: 117%;
+
+    margin: 0;
+    padding: 9px 7px;
+
+    list-style: none;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5df;
+
+    border-radius: 14px;
+
+    /* سایه واضح و حرفه‌ای */
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.18),
+        0 8px 18px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.08);
+
+    z-index: 9999;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(12px) scale(0.98);
+
+    transform-origin: top right;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+}
+/* =========================================================
+   SHOW SUBMENU
+========================================================= */
+
+.has-submenu:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================================
+   ITEMS
+========================================================= */
+
+.has-submenu > .submenu > li {
+
+    display: block !important;
+    flex: none !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    list-style: none;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   SEPARATOR
+========================================================= */
+
+.has-submenu > .submenu > li:not(:last-child)::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+
+    height: 1px;
+
+    background: #f0f1f0;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.has-submenu > .submenu > li > a {
+
+    position: relative;
+
+    display: flex !important;
+
+    align-items: center;
+
+    width: 100% !important;
+
+    box-sizing: border-box;
+
+    padding: 11px 14px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    border-radius: 9px;
+
+    transition:
+        background-color 0.22s ease,
+        color 0.22s ease,
+        padding-right 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+
+/* =========================================================
+   GREEN INDICATOR
+========================================================= */
+
+.has-submenu > .submenu > li > a::before {
+
+    content: "";
+
+    width: 4px;
+    height: 0;
+
+    position: absolute;
+
+    right: 3px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: #08c7c7;
+
+    border-radius: 4px;
+
+    transition: height 0.22s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.has-submenu > .submenu > li > a:hover {
+
+    background: #cef9f1;
+
+    color: #166559;
+
+    padding-right: 20px;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(57, 181, 74, 0.12);
+}
+
+
+/* green bar on hover */
+
+.has-submenu > .submenu > li > a:hover::before {
+
+    height: 65%;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.has-submenu > .submenu::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -7px;
+    right: 25px;
+
+    width: 13px;
+    height: 13px;
+
+    background: #fff;
+
+    border-left: 1px solid #e4e7e4;
+    border-top: 1px solid #e4e7e4;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   TOP GREEN LINE
+========================================================= */
+
+.has-submenu > .submenu::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 18px;
+    left: 18px;
+
+    height: 2px;
+
+    /* background: #af39b5; */
+
+    border-radius: 0 0 5px 5px;
+
+    opacity: 0.8;
+}

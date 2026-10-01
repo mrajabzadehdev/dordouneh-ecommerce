@@ -1,0 +1,49 @@
+*{
+box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url("../fonts/fa-solid-900.woff2");
+  font-weight: 900;
+
+}
+
+
+.page {
+  min-height: 100vh;
+}
+
+.menu1 {
+  width: 50px;
+}
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* @font-face {
+    font-family: "Vazirmatn";
+    src: url("fonts/Vazirmatn-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} */
+/* 
+body {
+    font-family: "Vazirmatn", sans-serif;
+    font-size: smaller;
+  } */

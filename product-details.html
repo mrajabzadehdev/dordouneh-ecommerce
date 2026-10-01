@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>جزئیات محصول | دردونه</title>
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         PRODUCT DETAILS CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="E-commerce-New/css/product-details.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+     همان Header صفحه shopping-cart
+===================================================== -->
+
+<header class="cart-header">
+
+
+    <!-- Logo -->
+
+    <a
+        href="index.html"
+        class="cart-logo"
+        aria-label="بازگشت به فروشگاه"
+    >
+
+        <img
+            class="dordou"
+            src="E-commerce-New/images/dordouneh.jpg"
+            alt="دردونه"
+        >
+
+    </a>
+
+
+    <!-- Title -->
+
+    <div class="cart-title">
+
+        <div class="cart-title-icon">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+        </div>
+
+
+        <div>
+
+            <h1>
+                توضیحات بیشتر درباره محصول
+            </h1>
+
+            <span>
+                بررسی و مدیریت محصولات
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Cart -->
+
+    <div
+        class="cart-box"
+        role="button"
+        tabindex="0"
+        aria-label="سبد خرید"
+    >
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span id="cart-counter">
+            ۰
+        </span>
+
+    </div>
+
+
+</header>
+
+
+
+<!-- =====================================================
+     PRODUCT PAGE
+===================================================== -->
+
+<main class="product-page">
+
+
+    <!-- =================================================
+         مسیر صفحه
+    ================================================== -->
+
+    <div class="top-bar">
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <span>
+                ‹
+            </span>
+
+            <span>
+                محصولات
+            </span>
+
+            <span>
+                ‹
+            </span>
+
+            <strong id="breadcrumb-title">
+                جزئیات محصول
+            </strong>
+
+        </div>
+
+
+        <!-- بازگشت به فروشگاه -->
+
+        <a
+            href="index.html"
+            class="back-to-shop"
+        >
+            ← بازگشت به فروشگاه
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         PRODUCT
+    ================================================== -->
+
+    <section class="product-card">
+
+
+        <!-- =================================================
+             تصویر محصول
+        ================================================== -->
+
+        <div class="product-gallery">
+
+
+            <div class="image-badge">
+                پیشنهاد ویژه
+            </div>
+
+
+            <div class="main-image-wrapper">
+
+                <img
+                    id="product-image"
+                    src=""
+                    alt="تصویر محصول"
+                >
+
+            </div>
+
+
+            <div class="image-thumbnails">
+
+                <div class="thumbnail active">
+
+                    <img
+                        id="thumbnail-image"
+                        src=""
+                        alt=""
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             اطلاعات محصول
+        ================================================== -->
+
+        <div class="product-info">
+
+
+            <!-- دسته‌بندی -->
+
+            <div
+                class="product-category"
+                id="product-category"
+            >
+                دسته‌بندی محصول
+            </div>
+
+
+            <!-- عنوان -->
+
+            <h1 id="product-title">
+                نام محصول
+            </h1>
+
+
+
+            <!-- =================================================
+                 امتیاز
+            ================================================== -->
+
+            <div class="rating-row">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <span id="product-rating">
+                    0
+                </span>
+
+                <span class="rating-text">
+                    امتیاز کاربران
+                </span>
+
+            </div>
+
+
+
+            <div class="divider"></div>
+
+
+
+            <!-- =================================================
+                 توضیحات
+            ================================================== -->
+
+            <div class="product-description">
+
+                <h3>
+                    معرفی محصول
+                </h3>
+
+                <p id="product-description">
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 قیمت
+            ================================================== -->
+
+            <div class="price-box">
+
+
+                <div class="current-price">
+
+                    <span id="product-price">
+                        0
+                    </span>
+
+                    <span class="currency">
+                        تومان
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="discount-badge"
+                    id="product-discount"
+                >
+                    0% تخفیف
+                </div>
+
+
+                <div class="price-content">
+
+                    <span
+                        class="off-price"
+                        id="off-price"
+                    >
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <span
+                        style="
+                            color: rgb(0, 0, 0);
+                            font-size: 20px !important;
+                            font-weight: 800;
+                        "
+                        class="new-price"
+                        id="new-price"
+                    >
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 موجودی
+            ================================================== -->
+
+            <div class="stock-status">
+
+                <span class="stock-icon">
+                    ✓
+                </span>
+
+                <span>
+                    موجود در انبار
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 تعداد
+            ================================================== -->
+
+            <div class="quantity-section">
+
+                <span class="quantity-title">
+                    تعداد:
+                </span>
+
+
+                <div class="quantity-control">
+
+                    <button
+                        id="increase"
+                        type="button"
+                    >
+                        +
+                    </button>
+
+                    <span id="quantity">
+                        1
+                    </span>
+
+                    <button
+                        id="decrease"
+                        type="button"
+                    >
+                        −
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 دکمه‌ها
+            ================================================== -->
+
+            <div class="product-actions">
+
+
+                <button
+                    id="add-to-cart"
+                    class="add-cart-btn"
+                    type="button"
+                >
+                    🛒 افزودن به سبد خرید
+                </button>
+
+
+                <button
+                    id="buy-now"
+                    class="buy-now-btn"
+                    type="button"
+                >
+                    خرید فوری
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 خدمات
+            ================================================== -->
+
+            <div class="product-services">
+
+
+                <div class="service-item">
+
+                    <span class="service-icon">
+                        🚚
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            ارسال سریع
+                        </strong>
+
+                        <small>
+                            سراسر کشور
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="service-item">
+
+                    <span class="service-icon">
+                        🔒
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            خرید امن
+                        </strong>
+
+                        <small>
+                            پرداخت مطمئن
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="service-item">
+
+                    <span class="service-icon">
+                        🛡️
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            ضمانت کالا
+                        </strong>
+
+                        <small>
+                            تضمین اصالت
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         اطلاعات تکمیلی
+    ====================================================== -->
+
+    <section class="product-extra">
+
+
+        <div class="extra-title">
+
+            <h2>
+                اطلاعات محصول
+            </h2>
+
+            <span></span>
+
+        </div>
+
+
+
+        <div class="features-grid">
+
+
+            <div class="feature-box">
+
+                <span>
+                    📦
+                </span>
+
+                <div>
+
+                    <strong>
+                        ارسال کالا
+                    </strong>
+
+                    <p>
+                        ارسال سریع سفارش
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="feature-box">
+
+                <span>
+                    🔐
+                </span>
+
+                <div>
+
+                    <strong>
+                        پرداخت امن
+                    </strong>
+
+                    <p>
+                        پرداخت از درگاه امن
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="feature-box">
+
+                <span>
+                    ↩️
+                </span>
+
+                <div>
+
+                    <strong>
+                        ضمانت بازگشت
+                    </strong>
+
+                    <p>
+                        طبق قوانین فروشگاه
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="feature-box">
+
+                <span>
+                    ☎️
+                </span>
+
+                <div>
+
+                    <strong>
+                        پشتیبانی
+                    </strong>
+
+                    <p>
+                        پاسخگویی به مشتریان
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="cart-footer">
+
+    <span>
+        © دردونه - تمامی حقوق محفوظ است
+    </span>
+
+    <span>
+        خرید امن • پشتیبانی • ضمانت بازگشت
+    </span>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="E-commerce-New/js/products.js"></script>
+
+<script src="E-commerce-New/js/product-details.js"></script>
+
+
+</body>
+
+</html>

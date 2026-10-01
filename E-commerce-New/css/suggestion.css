@@ -1,0 +1,230 @@
+/* =========================================
+   بخش محصولات
+========================================= */
+
+.products-Container {
+
+    /* width: 100%;
+    max-width: calc(75%);
+    padding: 0;
+    margin-top: 125px;
+    margin-bottom: 13px;
+    margin-left: calc(7%); */
+
+
+
+    /* width: calc(100% - 0px); */
+
+    /* width: 100%; */
+    max-width: 80%;
+
+    min-height: 50%;
+    height: auto;
+
+    /* margin: 0px calc(auto-300px); */
+    margin-left: 5.8%;
+
+    padding: 1.1%;
+
+    background-color: rgb(246, 90, 116);
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: stretch;
+
+    justify-content: flex-start;
+
+    gap: 0.4%;
+
+    flex-wrap: wrap;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   کارت محصول
+========================================= */
+
+.product-card {
+
+    flex: 0 1 200px;
+
+    min-width: 180px;
+    max-width: 200px;
+
+    min-height: 10%;
+
+    padding: 10px;
+
+    border: 2px solid rgb(9, 9, 9);
+
+    border-radius: 10px;
+
+    background-color: rgb(249, 249, 246);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+
+/* هاور کارت */
+
+.product-card:hover {
+    cursor: pointer;
+
+    box-shadow: 0 0 10px rgb(71, 71, 71);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   تصویر محصول
+========================================= */
+
+.product-card img {
+
+    width: 100%;
+
+    /* height: 160px; */
+    height: 90%;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   نام محصول
+========================================= */
+
+.product-card h3 {
+
+    width: 100%;
+
+    margin: 5px 0;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+
+
+/* .product-card h3 { */
+.category{
+    /* color: red; */
+    width: 100%;
+
+    margin: 5px 0;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+/* =========================================
+   قیمت
+========================================= */
+
+.price {
+
+    direction: rtl;
+
+    width: 100%;
+
+    margin: 5px 0;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   تخفیف
+========================================= */
+
+.discount1 {
+
+    color: red;
+
+    font-weight: bold;
+
+    margin: 5px 0;
+}
+
+
+/* =========================================
+   دکمه افزودن به سبد
+========================================= */
+
+.add-to-cart {
+
+    width: 80%;
+
+    /* min-height: 10%; */
+max-height: 45%;
+    margin-top: auto;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+    background-color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.add-to-cart:hover {
+
+    background-color: rgb(218, 218, 218);
+
+    box-shadow: 0 0 5px red;
+}
+
+.shegeft{
+    width: 10%;
+    height: 10%;
+    margin-top: 10%;
+    margin-left: 2%;
+}

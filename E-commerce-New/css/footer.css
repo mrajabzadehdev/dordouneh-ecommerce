@@ -1,0 +1,996 @@
+/* =========================================================
+   DORDOUNEH PROFESSIONAL FOOTER
+   Isolated / No Conflict Version
+========================================================= */
+
+
+/* =========================================================
+   MAIN FOOTER
+========================================================= */
+
+.dordouneh-footer {
+
+    direction: rtl;
+
+    position: relative;
+
+    width: 86%;
+
+    margin-top: 30px;
+margin-left: 1%;
+    overflow: hidden;
+
+    color: #ffffff;
+border-radius: 20px;
+    /* background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(6, 199, 170, 0.13),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(6, 199, 170, 0.09),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #101619 0%,
+            #141d21 50%,
+            #0d1316 100%
+        ); */
+
+    background: rgb(109, 153, 132);    
+    font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    border-top:
+        1px solid
+        rgba(6, 199, 170, 0.20);
+
+    box-shadow:
+        0 -10px 40px
+        rgba(0, 0, 0, 0.06);
+
+}
+
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+.dordouneh-footer-glow {
+
+    position: absolute;
+
+    top: -230px;
+
+    left: 50%;
+
+    width: 420px;
+
+    height: 420px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        rgba(6, 199, 170, 0.11);
+
+    filter:
+        blur(90px);
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   FOOTER MAIN CONTAINER
+========================================================= */
+
+.dordouneh-footer-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(
+            1250px,
+            calc(100% - 50px)
+        );
+
+/* width: 50%!important; */
+
+    margin:
+        0 auto;
+
+    padding:
+        30px 0 0px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1.4fr;
+
+    gap:
+        55px;
+
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.dordouneh-footer-brand {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+
+.dordouneh-footer-logo {
+
+    width: 55%;
+    height: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    /* background:
+        linear-gradient(
+            145deg,
+            #06c7aa,
+            #087e74
+        ); */
+background: white;
+    box-shadow:
+        0 10px 10px
+        rgba(3, 250, 213, 0.466);
+
+    margin-bottom: 18px;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.dordouneh-footer-logo:hover {
+    cursor: pointer;
+    transform:
+        translateY(-5px)
+        rotate(-3deg);
+
+    box-shadow:
+        0 15px 35px;
+        box-shadow:
+        0 10px 10px
+        rgba(3, 250, 213, 0.466);
+}
+
+
+.dordouneh-footer-logo img {
+
+    width: 90%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    /* border-radius: 14px; */
+
+    /* background: #ffffff; */
+
+}
+
+
+/* =========================================================
+   BRAND TITLE
+========================================================= */
+
+.dordouneh-footer-brand h2 {
+
+    margin:
+        0 0 12px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        25px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -0.5px;
+
+}
+
+
+.dordouneh-footer-brand h2::after {
+
+    content:
+        "";
+
+    display:
+        block;
+
+    width:
+        38px;
+
+    height:
+        3px;
+
+    margin-top:
+        10px;
+
+    border-radius:
+        20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #06c7aa,
+            #65ead9
+        );
+
+}
+
+
+/* =========================================================
+   BRAND DESCRIPTION
+========================================================= */
+
+.dordouneh-footer-brand > p {
+
+    max-width:
+        315px;
+
+    margin:
+        0;
+
+        color:
+        #9ad6e9;
+
+    font-size:
+        14px;
+
+    line-height:
+        2.25;
+
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA
+========================================================= */
+
+.dordouneh-footer-social {
+
+    display:
+        flex;
+
+    direction:
+        ltr;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    margin-top:
+        24px;
+
+}
+
+
+.dordouneh-footer-social a {
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        12px;
+
+        color:
+        #9ad6e9;
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.045
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.075
+        );
+
+    text-decoration:
+        none;
+
+    transition:
+        transform .30s ease,
+        color .30s ease,
+        background .30s ease,
+        box-shadow .30s ease,
+        border-color .30s ease;
+
+}
+
+
+.dordouneh-footer-social a:hover {
+
+    transform:
+        translateY(-5px);
+
+    color:
+        #ffffff;
+
+    background:
+        #06c7aa;
+
+    border-color:
+        #06c7aa;
+
+    box-shadow:
+        0 10px 25px
+        rgba(
+            6,
+            199,
+            170,
+            0.32
+        );
+
+}
+
+
+.dordouneh-footer-social a i {
+
+    font-size:
+        17px;
+
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.dordouneh-footer-column {
+
+    position:
+        relative;
+
+}
+
+
+.dordouneh-footer-column h3 {
+
+    margin:
+        4px 0 12px;
+
+    color:
+        #057764;
+
+    font-size:
+        17px;
+
+    font-weight:
+        700;
+
+}
+
+
+.dordouneh-footer-line {
+
+    display:
+        block;
+
+    width:
+        44px;
+
+    height:
+        3px;
+
+    margin-bottom:
+        23px;
+
+    border-radius:
+        20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #06c7aa,
+            rgba(
+                6,
+                199,
+                170,
+                0.10
+            )
+        );
+
+}
+
+
+/* =========================================================
+   FOOTER LIST
+========================================================= */
+
+.dordouneh-footer-column ul {
+
+    margin:
+        0;
+
+    padding:
+        0;
+
+    list-style:
+        none;
+
+}
+
+
+.dordouneh-footer-column li {
+
+    margin-bottom:
+        14px;
+
+}
+
+
+.dordouneh-footer-column li a {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    color:
+        #9ad6e9;
+
+    font-size:
+        14px;
+
+    text-decoration:
+        none;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+
+}
+
+
+.dordouneh-footer-column li a i {
+
+    color:
+        #06c7aa;
+
+    font-size:
+        8px;
+
+    transition:
+        transform .25s ease;
+
+}
+
+
+.dordouneh-footer-column li a:hover {
+
+    color:
+        #ffffff;
+
+    transform:
+        translateX(-5px);
+
+}
+
+
+.dordouneh-footer-column li a:hover i {
+
+    transform:
+        translateX(-4px);
+
+}
+
+
+/* =========================================================
+   COLUMN ACTIVE LINE
+========================================================= */
+
+.dordouneh-footer-column::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    right:
+        -16px;
+
+    width:
+        2px;
+
+    height:
+        0;
+
+    border-radius:
+        10px;
+
+    background:
+        #06c7aa;
+
+    box-shadow:
+        0 0 12px
+        rgba(
+            6,
+            199,
+            170,
+            0.55
+        );
+
+    transition:
+        height .35s ease;
+
+}
+
+
+.dordouneh-footer-column:hover::before {
+
+    height:
+        30px;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.dordouneh-contact-item {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        13px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.dordouneh-contact-icon {
+
+    flex-shrink:
+        0;
+
+    width:
+        39px;
+
+    height:
+        39px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        11px;
+
+    color:
+        #06c7aa;
+
+    background:
+        rgba(255, 5, 5, 0.08);
+
+    border:
+        1px solid
+        rgba(
+            6,
+            199,
+            170,
+            0.14
+        );
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+
+}
+
+
+.dordouneh-contact-item:hover
+.dordouneh-contact-icon {
+
+    transform:
+        translateY(-3px);
+
+    background:
+        rgb(6, 199, 173);
+color: white ;
+}
+
+
+.dordouneh-contact-item span {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+}
+
+
+.dordouneh-contact-item p {
+
+    margin:
+        0;
+
+    color:
+        #1853418e;
+
+    font-size:
+        12px;
+
+    line-height:
+        1.9;
+
+}
+
+
+/* =========================================================
+   BOTTOM FOOTER
+========================================================= */
+
+.dordouneh-footer-bottom {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+
+}
+
+
+.dordouneh-footer-bottom-inner {
+
+    width:
+        min(
+            1250px,
+            calc(100% - 50px)
+        );
+
+    min-height:
+        72px;
+
+    margin:
+        0 auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+}
+
+
+.dordouneh-footer-bottom-inner p {
+
+    margin:
+        0;
+
+    color:
+        #748185;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =========================================================
+   TRUST ITEMS
+========================================================= */
+
+.dordouneh-footer-trust {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        25px;
+
+}
+
+
+.dordouneh-footer-trust span {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    color:
+        #8b989c;
+
+    font-size:
+        12px;
+
+}
+
+
+.dordouneh-footer-trust i {
+
+    color:
+        #06c7aa;
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .dordouneh-footer-container {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:
+            45px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .dordouneh-footer {
+
+        margin-top:
+            45px;
+
+    }
+
+
+    .dordouneh-footer-container {
+
+        width:
+            calc(100% - 35px);
+
+        padding:
+            45px 0 35px;
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            38px;
+
+    }
+
+
+    .dordouneh-footer-brand {
+
+        align-items:
+            center;
+
+        text-align:
+            center;
+
+    }
+
+
+    .dordouneh-footer-brand > p {
+
+        max-width:
+            330px;
+
+    }
+
+
+    .dordouneh-footer-brand h2::after {
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+
+    }
+
+
+    .dordouneh-footer-social {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .dordouneh-footer-column {
+
+        padding-right:
+            5px;
+
+    }
+
+
+    .dordouneh-footer-bottom-inner {
+
+        width:
+            calc(100% - 35px);
+
+        padding:
+            18px 0;
+
+        flex-direction:
+            column;
+
+        justify-content:
+            center;
+
+        text-align:
+            center;
+
+    }
+
+
+    .dordouneh-footer-trust {
+
+        flex-wrap:
+            wrap;
+
+        justify-content:
+            center;
+
+        gap:
+            15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .dordouneh-footer-container {
+
+        width:
+            calc(100% - 25px);
+
+    }
+
+
+    .dordouneh-footer-social a {
+
+        width:
+            37px;
+
+        height:
+            37px;
+
+    }
+
+
+    .dordouneh-footer-trust {
+
+        gap:
+            10px;
+
+    }
+
+}

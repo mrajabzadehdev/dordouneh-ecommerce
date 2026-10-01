@@ -1,0 +1,292 @@
+*{
+box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================
+   صفحه ورود پروژه دردونه
+========================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #d5f8ed;
+  /* background: #f5f3f8; */
+  padding: 0px 15px;
+  /* justify-content: center; */
+}
+
+/* جعبه اصلی ورود */
+
+.auth-box {
+  width: 100%;
+  max-width: 430px;
+
+  background: #ffffff;
+  /* padding: 35px 30px; */
+padding: 5px 30px;
+  border-radius: 18px;
+
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.432);
+
+  /* align-items:center ; */
+}
+
+
+
+/* متن خوش آمدگویی */
+
+.auth-welcome {
+  text-align: center;
+
+  color: #777;
+
+  font-size: 14px;
+
+  /* margin-bottom: 25px; */
+  margin: 0;
+  
+}
+
+/* =========================
+   تب‌های ورود و ثبت نام
+========================= */
+
+.auth-tabs {
+  display: flex;
+
+  border-bottom: 1px solid #ddd;
+
+  margin-bottom: 25px;
+}
+
+.auth-tab {
+  flex: 1;
+
+  border: none;
+  background: none;
+
+  padding: 12px;
+
+  font-size: 15px;
+
+  color: #777;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+/* خط زیر تب فعال */
+
+.auth-tab.active {
+  color: #6c3cc9;
+  font-weight: bold;
+}
+
+.auth-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  right: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #6c3cc9;
+
+  border-radius: 5px 5px 0 0;
+}
+
+/* =========================
+   فرم
+========================= */
+
+.auth-form h1 {
+  font-size: 20px;
+
+  color: #116f66;
+  font-weight: 900;
+  /* margin-bottom: 25px; */
+
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+/* وقتی روی input کلیک می‌کنیم */
+
+.form-group input:focus {
+  border-color: #6c3cc9;
+
+  box-shadow: 0 0 0 3px rgba(108, 60, 201, 0.1);
+}
+
+/* =========================
+   فراموشی رمز
+========================= */
+
+.forgot-password {
+  text-align: left;
+
+  margin: 5px 0 20px;
+}
+
+.forgot-password a {
+  color: #6c3cc9;
+
+  font-size: 13px;
+
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   پیام خطا / موفقیت
+========================= */
+
+.auth-message {
+  min-height: 22px;
+
+  /* margin-bottom: 10px; */
+  margin: 0;
+
+  font-size: 13px;
+
+  text-align: center;
+}
+
+/* =========================
+   دکمه ورود
+========================= */
+
+.auth-button {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #6c3cc9;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.auth-button:hover {
+  background: #5929ae;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   بازگشت به فروشگاه
+========================= */
+
+.back-home {
+  text-align: center;
+
+  /* margin-top: 25px; */
+
+  padding-top: 10px;
+
+  border-top: 1px solid #eee;
+}
+
+.back-home a {
+  color: #666;
+
+  font-size: 13px;
+
+  text-decoration: none;
+}
+
+.back-home a:hover {
+  color: #6c3cc9;
+}
+
+/* فرم مخفی */
+
+.hidden {
+  display: none;
+}
+
+/* =========================
+   نمایش مناسب در موبایل
+========================= */
+
+@media (max-width: 500px) {
+  .auth-box {
+    padding: 28px 20px;
+
+    border-radius: 14px;
+  }
+
+  .auth-logo {
+    font-size: 28px;
+  }
+}
+
+.dordou {
+  height: 68px !important;
+  margin: auto 120px;
+  /* margin-right: 10px; */
+  /* align-items:auto!important ; */
+  /* justify-content: auto!important; */
+  /* padding: ce; */
+}
