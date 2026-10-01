@@ -10,7 +10,7 @@ const products = [
     category: "لوازم کودک",
     discount: 10,
     rating: 3.9,
-    image: "/E-commerce-New/images/goods/pish1.webp",
+    image: "E-commerce-New/images/goods/pish1.webp",
     describe: "",
     salesCount: 1025,
     createdAt: "2026-09-30",
@@ -23,7 +23,7 @@ const products = [
     category: "کالای دیجیتال",
     discount: 25,
     rating: 3.7,
-    image: "/E-commerce-New/images/goods/pish2.webp",
+    image: "E-commerce-New/images/goods/pish2.webp",
     describe: "",
     salesCount: 15,
     createdAt: "2031-09-30",
@@ -36,7 +36,7 @@ const products = [
     category: "لپ‌تاپ و کامپیوتر",
     discount: 15,
     rating: 5,
-    image: "/E-commerce-New/images/goods/pish3.webp",
+    image: "E-commerce-New/images/goods/pish3.webp",
     describe: "",
     salesCount: 12,
     createdAt: "2020-09-30",
@@ -49,7 +49,7 @@ const products = [
     category: "مانیتور",
     discount: 8,
     rating: 4.8,
-    image: "/E-commerce-New/images/goods/pish4.webp",
+    image: "E-commerce-New/images/goods/pish4.webp",
     describe: "",
     salesCount: 5,
     createdAt: "2027-09-30",
@@ -62,7 +62,7 @@ const products = [
     category: "زیبایی و سلامت",
     discount: 25,
     rating: 4.2,
-    image: "/E-commerce-New/images/goods/pish5.webp",
+    image: "E-commerce-New/images/goods/pish5.webp",
     describe: "",
     salesCount: 135,
     createdAt: "2026-07-30",
@@ -136,7 +136,7 @@ function displayProducts(list = products) {
   productsContainer.innerHTML += `
         <img
             class="shegeft"
-            src="/E-commerce-New/images/goods/shegeftangiz1---.jpg"
+            src="E-commerce-New/images/goods/shegeftangiz1---.jpg"
             alt=""
         >
     `;
@@ -158,7 +158,7 @@ const cardsnew = [
     category: "زیبایی و سلامت",
     rating: 3.9,
     describe: "قطره خوراکی کلروفیل مایع ارگانیک و طبیعی",
-    image: "/E-commerce-New/images/goods/k1.webp",
+    image: "E-commerce-New/images/goods/k1.webp",
     discount: 0,
     salesCount: 105,
     createdAt: "2016-09-30",
@@ -172,7 +172,7 @@ const cardsnew = [
     rating: 3.7,
     describe:
       "مناسب برای پوست های خشک و بدست آمده از عصاره گیاهان",
-    image: "/E-commerce-New/images/goods/k2.webp",
+    image: "E-commerce-New/images/goods/k2.webp",
     discount: 0,
     salesCount: 145,
     createdAt: "2026-09-10",
@@ -186,7 +186,7 @@ const cardsnew = [
     rating: 5,
     describe:
       "با کیفیت و در انواع مختلف و بابسته بندی یک کیلویی",
-    image: "/E-commerce-New/images/goods/k4.webp",
+    image: "E-commerce-New/images/goods/k4.webp",
     discount: 0,
     salesCount: 250,
     createdAt: "2026-01-30",
@@ -200,7 +200,7 @@ const cardsnew = [
     rating: 4.8,
     describe:
       "با کیفیت و در انواع مختلف و بابسته بندی نیم کیلویی",
-    image: "/E-commerce-New/images/goods/k5.webp",
+    image: "E-commerce-New/images/goods/k5.webp",
     discount: 0,
     salesCount: 1,
     createdAt: "2020-09-30",
@@ -214,7 +214,7 @@ const cardsnew = [
     rating: 4.1,
     describe:
       "در مدلهای جدید و بسیار مقاوم و در سایزهای مختلف",
-    image: "/E-commerce-New/images/goods/k6.webp",
+    image: "E-commerce-New/images/goods/k6.webp",
     discount: 0,
     salesCount: 5,
     createdAt: "2021-09-30",
@@ -227,7 +227,7 @@ const cardsnew = [
     category: "زیبایی و سلامت",
     rating: 3.9,
     describe: "قطره خوراکی کلروفیل مایع ارگانیک و طبیعی",
-    image: "/E-commerce-New/images/goods/k1.webp",
+    image: "E-commerce-New/images/goods/k1.webp",
     discount: 0,
     salesCount: 225,
     createdAt: "2027-09-30",
@@ -241,7 +241,7 @@ const cardsnew = [
     rating: 3.7,
     describe:
       "مناسب برای پوست های خشک و بدست آمده از عصاره گیاهان",
-    image: "/E-commerce-New/images/goods/k2.webp",
+    image: "E-commerce-New/images/goods/k2.webp",
     discount: 0,
     salesCount: 125,
     createdAt: "2026-09-30",
@@ -255,7 +255,7 @@ const cardsnew = [
     rating: 5,
     describe:
       "با کیفیت و در انواع مختلف و بابسته بندی یک کیلویی",
-    image: "/E-commerce-New/images/goods/k4.webp",
+    image: "E-commerce-New/images/goods/k4.webp",
     discount: 0,
     salesCount: 100,
     createdAt: "2025-09-30",
@@ -269,7 +269,7 @@ const cardsnew = [
     rating: 4.8,
     describe:
       "با کیفیت و در انواع مختلف و بابسته بندی نیم کیلویی",
-    image: "/E-commerce-New/images/goods/k5.webp",
+    image: "E-commerce-New/images/goods/k5.webp",
     discount: 0,
     salesCount: 1,
     createdAt: "2016-09-30",
@@ -283,7 +283,7 @@ const cardsnew = [
     rating: 4.2,
     describe:
       "در مدلهای جدید و بسیار مقاوم و در سایزهای مختلف",
-    image: "/E-commerce-New/images/goods/k6.webp",
+    image: "E-commerce-New/images/goods/k6.webp",
     discount: 0,
     salesCount: 0,
     createdAt: "2017-09-30",
@@ -296,7 +296,7 @@ const cardsnew = [
     category: "بهداشتی و آرایشی",
     rating: 3.9,
     describe: "قطره خوراکی کلروفیل مایع ارگانیک و طبیعی",
-    image: "/E-commerce-New/images/goods/k1.webp",
+    image: "E-commerce-New/images/goods/k1.webp",
     discount: 0,
     salesCount: 1,
     createdAt: "2027-01-30",
@@ -310,7 +310,7 @@ const cardsnew = [
     rating: 3.7,
     describe:
       "مناسب برای پوست های خشک و بدست آمده از عصاره گیاهان",
-    image: "/E-commerce-New/images/goods/k2.webp",
+    image: "E-commerce-New/images/goods/k2.webp",
     discount: 0,
     salesCount: 2,
     createdAt: "2026-09-10",
@@ -324,7 +324,7 @@ const cardsnew = [
     rating: 5,
     describe:
       "با کیفیت و در انواع مختلف و بابسته بندی یک کیلویی",
-    image: "/E-commerce-New/images/goods/k4.webp",
+    image: "E-commerce-New/images/goods/k4.webp",
     discount: 0,
     salesCount: 1,
     createdAt: "2027-09-10",
@@ -338,7 +338,7 @@ const cardsnew = [
     rating: 4.8,
     describe:
       "با کیفیت و در انواع مختلف و بابسته بندی نیم کیلویی",
-    image: "/E-commerce-New/images/goods/k5.webp",
+    image: "E-commerce-New/images/goods/k5.webp",
     discount: 0,
     salesCount: 5,
     createdAt: "2021-09-30",
@@ -352,7 +352,7 @@ const cardsnew = [
     rating: 4.0,
     describe:
       "در مدلهای جدید و بسیار مقاوم و در سایزهای مختلف",
-    image: "/E-commerce-New/images/goods/k6.webp",
+    image: "E-commerce-New/images/goods/k6.webp",
     discount: 0,
     salesCount: 12,
     createdAt: "2021-09-02",
